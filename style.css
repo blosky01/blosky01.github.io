@@ -2438,4 +2438,44 @@ body {
   }
 }
 
+/* Estilo base para el elemento select */
+.selectP {
+  padding-left: 10px; /* Espaciado interno */
+  padding-right: 10px;
+  font-size: 16px; /* Tamaño de fuente */
+  border: 2px dashed #FFD15C; /* Borde con color gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #353353; /* Fondo blanco */
+  color: #333; /* Color de texto */
+  appearance: none; /* Elimina los estilos de apariencia predeterminados */
+  cursor: pointer; /* Cursor de selección */
+}
+
+/* Estilo para el elemento select cuando está enfocado */
+.selectP:focus {
+  outline: none; /* Elimina el contorno de enfoque predeterminado */
+  box-shadow: 0 0 5px #FFD15C; /* Sombra suave al enfocar */
+}
+
+/* Estilo para las opciones dentro del elemento select */
+.selectP option {
+  padding-left: 10px; /* Espaciado interno */
+  padding-right: 10px;
+  background-color: transparent;
+}
+
+/* Cambia el estilo del elemento select al pasar el mouse sobre las opciones */
+.selectP:hover option {
+  background-color: #353353 /* Cambia el fondo al pasar el mouse */
+}
+
+/* Estilo para el elemento select cuando está deshabilitado */
+.selectP:disabled {
+  opacity: 0.6; /* Reduce la opacidad cuando está deshabilitado */
+  cursor: not-allowed; /* Cambia el cursor a "no permitido" */
+}
+
+
+
+
 /*# sourceMappingURL=style.css.map */
